@@ -18,14 +18,8 @@ namespace PalindromeExercise
             {
                 string exampleTrim = example.Replace(" ", "").ToLower();
 
-                if (exampleTrim.SequenceEqual(exampleTrim.Reverse()))
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                return exampleTrim.SequenceEqual(exampleTrim.Reverse());
+
             }
         }
     }
